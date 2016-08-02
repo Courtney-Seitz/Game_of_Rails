@@ -21,6 +21,9 @@ def edit
   @house = House.find(params[:id])
 end
 
-
+private
+def house_params
+  params.require(:house).permit(:name)
+end
 
 end
