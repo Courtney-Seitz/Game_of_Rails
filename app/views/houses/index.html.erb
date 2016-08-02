@@ -1,0 +1,10 @@
+<h2><%= link_to "Houses - Game of Thrones", houses_path %></h2>
+
+<h4><%= link_to "+ Add NEW House +", new_house_path %></h4>
+
+<ul>
+<% @houses.each do |house| %>
+<li>
+<p><%= link_to house.name, house %></p>
+<% end %>
+</ul>
