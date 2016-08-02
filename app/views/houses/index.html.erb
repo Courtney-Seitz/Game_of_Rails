@@ -3,8 +3,12 @@
 <h4><%= link_to "+ Add NEW House +", new_house_path %></h4>
 
 <ul>
-<% @houses.each do |house| %>
-<li>
-<p><%= link_to house.name, house %></p>
-<% end %>
+  <% @houses.each do |house| %>
+  <li>
+    <h3><%= link_to "House " + house.name, house %></h3>
+    <h5><%= link_to "DELETE House " + house.name, house_path(house),
+    method: :delete,
+    data: { confirm: "Are you CERTAIN?" } %></h5>
+  </li>
+  <% end %>
 </ul>
