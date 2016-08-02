@@ -1,9 +1,12 @@
-<h2><%= link_to "Noble Westoros Houses - Game of Thrones", houses_path %></h2>
+<h2><%= link_to "Noble Westeros Houses - Game of Thrones", houses_path %></h2>
 <h3>Add NEW House</h3>
 
 <%= form_for @house do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name %>
+
+<%= f.label :img_url %>
+<%= f.text_field :img_url %>
 
 <%= f.submit %>
 
