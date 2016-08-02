@@ -1,12 +1,15 @@
+<div id="container">
 <h2><%= link_to "Noble Westoros Houses - Game of Thrones", houses_path %></h2>
 
 <h4><%= link_to "+ Add NEW House +", new_house_path %></h4>
+</div>
 
 <ul>
   <% @houses.each do |house| %>
-  <li>
+  <li class="boxed">
     <h3><%= link_to "House " + house.name, house %></h3>
-    <h5><%= link_to "DELETE House " + house.name, house_path(house),
+    <h5><%= link_to "EDIT House " + house.name, edit_house_path(house) %> |
+        <%= link_to "DELETE House " + house.name, house_path(house),
     method: :delete,
     data: { confirm: "Are you CERTAIN?" } %></h5>
   </li>

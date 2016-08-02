@@ -1,0 +1,11 @@
+<h2><%= link_to "Noble Westoros Houses - Game of Thrones", houses_path %></h2>
+<h3>EDIT House</h3>
+
+
+<%= form_for @house do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.submit %>
+
+<% end %>

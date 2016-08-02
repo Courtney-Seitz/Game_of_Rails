@@ -1,12 +1,25 @@
 // Place all the styles related to the houses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+
+}
+
 li {
+
+  text-align: center;
+  list-style:none;
+  margin: 20px;
+  padding: 10px;
+
+}
+
+.boxed {
   border-style: solid;
-text-align: center;
-list-style:none;
-margin: 20px;
-padding: 10px;
+}
+
+#container {
+  border-style: solid;
 }
 
 h2 {
