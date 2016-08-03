@@ -24,16 +24,17 @@ House.create([
   ])
 
   Character.create([
-    {name: "",
-    img_url:"",
-    house_id:""},
-    {name: "",
-    img_url:"",
-    house_id:""},
-    {name: "",
-    img_url:"",
-    house_id:""},
-    {name: "",
-    img_url:"",
-    house_id:""},
+    {name: "Ned Stark",
+    img_url:"http://66.media.tumblr.com/tumblr_m9qhpjWTDU1qzytg1.jpg",
+    house_id:"80"},
+    {name: "Robin Arryn",
+    img_url:"http://66.media.tumblr.com/tumblr_m9qhpjWTDU1qzytg1.jpg",
+    house_id:"81"},
+    {name: "Ramsay Bolton",
+    img_url:"http://img3.rnkr-static.com/user_node_img/50025/1000496281/C350/ramsay-bolton-tv-characters-photo-u1.jpg",
+    house_id:"82"},
+    {name: "Stannis Baratheon",
+    img_url:"http://media.salon.com/2015/04/game_of_thrones_stannis.jpg",
+    house_id:"83"},
+
     ])

@@ -1,2 +1,9 @@
-<h1>Characters#index</h1>
-<p>Find me in app/views/characters/index.html.erb</p>
+<h2>Characters <%= link_to "(+)", new_character_path %></h2>
+
+<ul>
+  <% @characters.each do |character| %>
+    <li>
+      <%= link_to "#{character.name} - #{character.house.name}", character %>
+    </li>
+  <% end %>
+</ul>
