@@ -20,7 +20,20 @@ House.create([
   {name: "Tyrell", img_url:"http://2.bp.blogspot.com/-wwq4ORZWd4o/TsKlqUvHeKI/AAAAAAAAAH4/0W0CarhAgOc/s1600/thrones12.jpg"},
   {name: "Tully", img_url:"http://1.bp.blogspot.com/-U9uOY4VMY88/TsKllnrP9nI/AAAAAAAAAHA/GTuAKX7l0Bo/s1600/thrones5.jpg"},
   {name: "Mormont", img_url:"http://1.bp.blogspot.com/-CTiJEHoj7cs/TsKlofVo4eI/AAAAAAAAAHg/iRXObYUMr6U/s1600/thrones9.jpg"},
-  
-
 
   ])
+
+  Character.create([
+    {name: "",
+    img_url:"",
+    house_id:""},
+    {name: "",
+    img_url:"",
+    house_id:""},
+    {name: "",
+    img_url:"",
+    house_id:""},
+    {name: "",
+    img_url:"",
+    house_id:""},
+    ])

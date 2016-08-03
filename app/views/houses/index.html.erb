@@ -9,7 +9,7 @@
   <% @houses.each do |house| %>
   <li class="boxed">
     <h3><%= link_to "House " + house.name, house %></h3>
-    <img src="<%= house.img_url %> " width="150px">
+    <img src="<%= house.img_url %> " width="200px">
     <h5><%= link_to "[EDIT] House " + house.name, edit_house_path(house) %> |
         <%= link_to "[DELETE] House " + house.name, house_path(house),
     method: :delete,
