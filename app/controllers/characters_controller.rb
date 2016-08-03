@@ -1,38 +1,34 @@
 class CharactersController < ApplicationController
+  def index
+    @characters = Character.all
+  end
+
   def new
-    @house = House.find(params[:house_id])
     @character = Character.new
   end
 
   def create
-    @house = House.find(params[:house_id])
-    @character = @house.characters.create!(character_params)
-    redirect_to @house
+    @character = Character.create!(character_params)
+    redirect_to characters_path(@character)
   end
 
   def show
     @character = Character.find(params[:id])
-    @house = @character.house
   end
 
   def edit
     @character = Character.find(params[:id])
-    @house = @character.house
   end
 
   def update
     @character = Character.find(params[:id])
-    if @character.update(character_params)
-      redirect_to @character
-    else
-      render :edit
-    end
+    @character.update(character_params)
+    redirect_to characters_path(@character)
   end
 
   def destroy
     @character = Character.find(params[:id])
     @character.destroy
-    redirect_to @character.house
   end
 
   private
