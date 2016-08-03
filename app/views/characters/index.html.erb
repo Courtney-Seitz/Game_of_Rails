@@ -1,8 +1,11 @@
+<div id="container">
+<h2><%= link_to "Noble Westeros Houses", houses_path %></h2>
 <h2>Characters <%= link_to "(+)", new_character_path %></h2>
+</div>
 
 <ul>
   <% @characters.each do |character| %>
-    <li>
+    <li class="boxed">
       <%= link_to "#{character.name} - #{character.house.name}", character %>
     </li>
   <% end %>
