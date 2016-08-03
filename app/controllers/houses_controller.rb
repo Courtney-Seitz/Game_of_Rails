@@ -21,6 +21,10 @@ def edit
   @house = House.find(params[:id])
 end
 
+def update
+  @house = House.find(params[:id])
+  redirect_to @house
+end
 
 private
 def house_params
