@@ -1,5 +1,5 @@
 <h2><%= link_to "Noble Westeros Houses", houses_path %></h2>
-<h3><%= @house.name %></h3>
+<h3><%= "House " + @house.name %></h3>
 <img src="<%= @house.img_url %> " width="300px">
 <h5><%= link_to "[EDIT] House " + @house.name, edit_house_path(@house) %> |
     <%= link_to "[DELETE] House " + @house.name, house_path(@house),

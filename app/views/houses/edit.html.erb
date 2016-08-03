@@ -1,5 +1,5 @@
 <h2><%= link_to "Noble Westeros Houses - Game of Thrones", houses_path %></h2>
-<h3>EDIT House</h3>
+<h3>EDIT This House</h3>
 
 <%= form_for @house do |f| %>
 <%= f.label :name %>
@@ -11,3 +11,5 @@
 <%= f.submit %>
 
 <% end %>
+<br/>
+<img src="<%= @house.img_url %> " width="300px">
